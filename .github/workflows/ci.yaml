@@ -1,6 +1,6 @@
 name: backend-ci
 on:
-  push:
+  pull_request:
     paths:
       - "apps/backend/**"
       - ".github/**"
