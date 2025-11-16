@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "eslint \"src/**/*.ts\" --fix",
     "dev": "nodemon",
@@ -16,8 +16,11 @@
   "dependencies": {
     "@prisma/client": "^6.19.0",
     "@trpc/server": "^11.7.1",
+    "@types/jest": "^30.0.0",
+    "@types/supertest": "^6.0.3",
     "express": "^5.1.0",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.4"
   },
   "devDependencies": {
     "@types/express": "^5.0.5",
@@ -31,8 +34,10 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-unused-imports": "^4.3.0",
+    "jest": "^30.2.0",
     "prettier": "^3.6.2",
     "prisma": "^6.19.0",
+    "ts-jest": "^29.4.5",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.3",
