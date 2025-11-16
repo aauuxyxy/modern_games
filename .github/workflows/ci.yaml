@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - "apps/backend/**"
+      - ".github/**"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,13 +16,13 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        working-directory: backend
+        working-directory: apps/backend
         run: npm install
 
       - name: Build app
-        working-directory: backend
+        working-directory: apps/backend
         run: npm run build
 
       - name: Run tests
-        working-directory: backend
+        working-directory: apps/backend
         run: npm test
