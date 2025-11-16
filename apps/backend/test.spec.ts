@@ -1,7 +1,7 @@
 describe('TypeScriptとJestのテスト　値チェック', () => {
   it('基本的なテスト', () => {
-    const a = 10;
-    expect(a).toBe(10);
+    const a = 20;
+    expect(a).toBe(20);
   });
 });
 
