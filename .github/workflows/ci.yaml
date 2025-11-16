@@ -2,7 +2,7 @@ name: backend-ci
 on:
   push:
     paths:
-      - "backend/**"
+      - "apps/backend/**"
 jobs:
   build:
     runs-on: ubuntu-latest
