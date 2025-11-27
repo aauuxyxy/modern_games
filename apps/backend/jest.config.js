@@ -14,5 +14,5 @@ module.exports = {
       tsConfig: 'tsconfig.json',
     },
   },
-  testMatch: ['**/*.spec.+(ts|js)'],
+  testMatch: ['src/**/*.spec.+(ts|js)'],
 };

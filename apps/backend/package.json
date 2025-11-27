@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint \"src/**/*.ts\"",
+    "lint": "eslint \"**/*.ts\"",
     "lint:fix": "eslint \"src/**/*.ts\" --fix",
     "dev": "nodemon",
     "build": "tsc"
@@ -16,7 +16,6 @@
   "dependencies": {
     "@prisma/client": "^6.19.0",
     "@trpc/server": "^11.7.1",
-    "@types/jest": "^30.0.0",
     "@types/supertest": "^6.0.3",
     "express": "^5.1.0",
     "nodemon": "^3.1.10",
@@ -24,6 +23,7 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.5",
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.10.0",
     "@typescript-eslint/eslint-plugin": "^8.46.4",
     "@typescript-eslint/parser": "^8.46.4",
